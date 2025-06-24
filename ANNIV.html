@@ -1,0 +1,264 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Fifth Anniversary</title>
+    
+</head>
+<body>
+    <div class="content">
+       <img class="bgg" src="images/as.jpg" alt="Background Image">
+        <h1 class="fade-in">For Love</h1>
+
+        <h2 class="slide-in">Welcome to my website for you.</h2>
+        <p class="fade-in">Five years, a thousand moments, infinite love.</p>
+        <div class="bottom-container">
+            <a href="ANNIV.html" class="go-home-button">Home</a>
+            <a href="#myVideoContainer" class="go-home-button" id="goVideo">Video</a>
+            <a href="#musicVideoContainer" class="go-home-button" id="goMusicVideo">Music</a>
+
+        </div>
+
+        <div class="image-gallery">
+    <div class="image-container">
+        <img src="images/3.jpg" alt="Image 1">
+        <div class="text-content">
+            <h3>Dangwa</h3>
+            <p>Our first dangwa date, love. Lagi akong pumupunta rito para bumili ng bulaklak para sa’yo.
+            Masaya naman kapag ako lang ang bumibili, pero mas lalo akong masaya nung kasama kita. 
+            Iba talaga ang pakiramdam kapag magkasama tayo sa mga simpleng bagay. Mas nagiging maganda ang lahat. 
+           
+            </p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="images/2.jpg" alt="Image 2">
+        <div class="text-content">
+            <h3>La Playa</h3>
+            <p>La Playa will always be so special to me. 
+                Celebrating your birthday there—surrounded by your friends and family—was pure happiness.
+                Seeing your smile filled me with joy, and I loved every moment we spent together. 
+                Thank you for letting me share that day with you. 
+            </p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="images/6.jpg" alt="Image 3">
+        <div class="text-content">
+            <h3>Church</h3>
+            <p>What I cherish most about us is how we pray together—going to church and asking God to bless and strengthen our relationship.
+            After five amazing years, we’ve continued to attend church together every sunday. Praying together not only brings us closer to Him, but deepens our bond as a couple. 
+            </p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="images/4.jpg" alt="Image 4">
+        <div class="text-content">
+            <h3>Tahanan</h3>
+            <p>Kahit saan—manila, kapehan, bilyaran, o kahit sa bahay lang—basta’t kasama kita, sobrang saya ko na. 
+                Simpleng meryenda, matutulog, o maghaharutan, okay na. 
+                Sa ngayon, bahay muna ng bawat isa, pero sa susunod, sa Tahanan na natin.   </p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="images/5.jpg" alt="Image 5">
+        <div class="text-content">
+            <h3>Photobooths</h3>
+                <p> Our first photobooth was on our fourth anniversary—and we think do to each month. It quickly became our favorite ritual.  
+                    Each shot adds a little moment of love to our story.
+            </p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="images/7.jpg" alt="Image 6">
+        <div class="text-content">
+            <h3>Food Buddy</h3>
+            <p>We love to eat, bebi. We’re always eager to try and explore new foods, 
+                discovering different restos together. Food always tastes better when shared with you. 
+                You and food will always make my tummy (and my heart) happy. Haha!
+            </p>
+        </div>
+    </div>
+</div>
+ <h5>Music</h5>
+     <p> Why this song? Because I never really knew what love was—until you. <br>
+You showed me it’s more than butterflies; it’s choosing each other every day.
+And I’ll always choose you. </p>
+<div class="videozz square" id="musicVideoContainer">
+  <video id="musicVideo" controls muted poster="Love Is.mp4">
+    <source src="Love Is.mp4" type="video/mp4">
+    <source src="Love Is.mp4" type="video/webm">
+  </video>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('scrollPlayBtn');
+  const container = document.getElementById('musicVideoContainer');
+  const video = document.getElementById('musicVideo');
+
+  btn.addEventListener('click', () => {
+    // Scroll to the video element
+    setTimeout(() => {
+      container.scrollIntoView({ block: 'start' });
+    }, 50);
+
+    // Play the video shortly after scrolling
+    setTimeout(() => {
+      video.play().catch(e => console.error('Play error:', e));
+    }, 300);
+  });
+});
+</script>
+        <h4 class="pulse">Letters</h4>
+          <div class="category-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="love">LOVE</button>
+    <button class="filter-btn" data-filter="health">HEALTH</button>
+    <button class="filter-btn" data-filter="future">FUTURE</button>
+    <button class="filter-btn" data-filter="you">YOU</button>
+</div>
+    </div>
+
+    <div class="box-container">
+        <div class="box love">
+            <h3>Love</h3>
+            <p>Happy anniversary, my love! Five amazing years—wow!
+Thank you for the love you give me every single day.
+I’ll keep choosing you, over and over again.
+Thank you for giving me another chance when I made mistakes and hurt you.
+I’ll never get tired of making it up to you and showing you just how deeply I love you. p>
+        </div>
+        <div class="box health">
+            <h3>Health </h3>
+            <p>I know how strong you are, love—grabe ka talaga, 
+you’ll do anything you can just to make things work. I’m so proud of the amazing woman you are. 
+But please,always take care of yourself too. Don’t forget to eat healthy,
+go easy on the Coke, and try to get enough rest. I know you’re more than capable,
+but I just want to see you happy and healthy always.</p>
+        </div>
+        <div class="box future">
+            <h3>Future </h3>
+            <p>Love, I know this is no longer just a simple relationship—five years, 
+and I still want so much more with you. I see my future with you in it—just you and me, 
+together in this world. Sa ngayon, ikaw yung unang taong binabati ko ng good morning sa chat, 
+pero soon, gusto ko ikaw na yung unang tao na makikita ko pagdilat ko sa umaga. With you by my side, 
+I know my future will be full of happiness for the rest of my life. </p>
+        </div>
+        <div class="box you">
+            <h3>You</h3>
+            <p>You always make me laugh, feel loved, and you make me feel that I have value as a person.
+Yung mga simpleng bagay na ginagawa mo para pasayahin ako, yung mga maliliit na gestures
+mo, yun ang nagpapalala saakin kung gaano ako ka swerte na ikaw ang kasama ko. 
+Pinaparamdam mo na special ako sa mga paraang hindi ko akalain.</p>
+        </div>
+        <div class="box love">
+            <h3>Love</h3>
+            <p>Love, I know how much you fought for me, especially with your friends, because you love me.
+ I’m so sorry for hurting you and for betraying your trust. I regret it every single day, and I just want 
+ to make things right, over and over again. I’ll never stop trying to earn back your trust. I want to be
+better, love, for us.</p>
+        </div>
+        <div class="box health">
+            <h3>Health</h3>
+            <p>At first, I fell for you because of how much you care for others. 
+But when I felt your care for me, wow, I fell even harder. Thank you, love, 
+for always looking out for me. I really love how you always care for me, how you’re always there, 
+worrying about me. I love you so much, love.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const boxes = document.querySelectorAll('.box');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+
+                    boxes.forEach(box => {
+                        if (filter === 'all' || box.classList.contains(filter)) {
+                            box.style.display = 'block';
+                        } else {
+                            box.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <br><br>
+ <h5>Video</h5>
+<p>
+  Five years of love, laughter, and unforgettable memories with you.
+  Happy anniversary, my love.
+</p>
+
+<div class="videoz" id="myVideoContainer">
+  <video id="myVideo" controls muted poster="Love Is.mp4">
+    <source src="wah.mp4" type="video/mp4">
+    <source src="wah.mp4" type="video/ogg">
+  </video>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('scrollPlayBtn');
+  const container = document.getElementById('myVideoContainer');
+  const video = document.getElementById('myVideo');
+
+  btn.addEventListener('click', () => {
+    console.log('Scrolling now...', container);
+    // small delay before scroll
+    setTimeout(() => {
+      container.scrollIntoView({ block: 'start' }); 
+    }, 50);
+    // then play
+    setTimeout(() => {
+      video.play().catch(e => console.error(e));
+    }, 300);
+  });
+});
+</script>
+<hr style="border: none; height: 2px; background-color: #0e0e0d; width: 100%;">
+<div class="container">
+  <!-- Left Column -->
+  <div class="column">
+    <h6>OTHERS</h6>
+    <ul>
+      <li>Information</li>
+      <li>Setting</li>
+    </ul>
+  </div>
+
+  <!-- Center Column -->
+  <div class="column">
+    <h6>RESOURCES</h6>
+    <ul>
+      <li>Blog</li>
+      <li>Help Center</li>
+    </ul>
+  </div>
+
+  <!-- Right Column -->
+  <div class="column">
+    <h6>LEGAL</h6>
+    <ul>
+      <li>Privacy Policy</li>
+      <li>Terms of Service</li>
+    </ul>
+  </div>
+   <div class="column">
+    <h6>SOCIAL</h6>
+    <ul>
+      <li>Facebook</li>
+      <li>Instagram</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
